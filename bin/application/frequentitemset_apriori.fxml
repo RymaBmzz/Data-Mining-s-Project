@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="598.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Apriori_controller">
+   <children>
+      <Separator fx:id="textareafreqitems" layoutX="355.0" layoutY="39.0" orientation="VERTICAL" prefHeight="437.0" prefWidth="28.0" AnchorPane.bottomAnchor="54.0" />
+      <Label alignment="CENTER" layoutX="70.0" layoutY="14.0" prefHeight="42.0" prefWidth="575.0" text="Algorithme Apriori appliqué sur un dataset d'associations" textAlignment="CENTER" textFill="#400b0b" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Comic Sans MS" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="2.0" layoutY="14.0" prefHeight="42.0" prefWidth="224.0" text="ItemSet les plus fréquents" AnchorPane.bottomAnchor="494.0" AnchorPane.leftAnchor="2.0" AnchorPane.rightAnchor="524.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="385.0" layoutY="14.0" prefHeight="42.0" prefWidth="181.0" text="Règles d'associations" AnchorPane.bottomAnchor="494.0" AnchorPane.topAnchor="14.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Line endX="100.0" layoutX="110.0" layoutY="80.0" startX="-100.0" />
+      <Line endX="100.0" layoutX="484.0" layoutY="77.0" startX="-100.0" />
+      <TextArea fx:id="textareafreqitem_all" layoutX="11.0" layoutY="89.0" prefHeight="201.0" prefWidth="348.0" />
+      <TextArea fx:id="textarearegleassoc_all" layoutX="383.0" layoutY="89.0" prefHeight="201.0" prefWidth="348.0" />
+      <Label layoutX="13.0" layoutY="486.0" prefHeight="28.0" prefWidth="92.0" text="Mining Time :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="383.0" layoutY="483.0" prefHeight="28.0" prefWidth="92.0" text="Mining Time :">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="timefrequentitem" layoutX="114.0" layoutY="491.0" prefHeight="28.0" prefWidth="200.0" AnchorPane.topAnchor="491.0" />
+      <TextArea fx:id="timeregleassoc" layoutX="484.0" layoutY="488.0" prefHeight="28.0" prefWidth="200.0" AnchorPane.topAnchor="488.0" />
+      <Button fx:id="dataset" layoutX="603.0" layoutY="14.0" mnemonicParsing="false" onAction="#Choose_DatasetAssociation" prefHeight="28.0" prefWidth="107.0" text="Dataset" />
+      <TextArea layoutX="113.0" layoutY="542.0" prefHeight="28.0" prefWidth="143.0" />
+      <Label layoutX="13.0" layoutY="528.0" prefHeight="28.0" prefWidth="92.0" text="Support minimal:">
+         <font>
+            <Font name="Comic Sans MS Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textareafreqitem_support" layoutX="11.0" layoutY="306.0" prefHeight="159.0" prefWidth="348.0" />
+      <TextArea fx:id="textarearegleassoc_confiance" layoutX="383.0" layoutY="306.0" prefHeight="159.0" prefWidth="348.0" />
+   </children>
+</AnchorPane>

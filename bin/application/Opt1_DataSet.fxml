@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Opt1_Controller">
+   <children>
+      <Label alignment="CENTER" prefHeight="69.0" prefWidth="630.0" text="Affichage des 5 chiffres pour chaque attribut : Min, Max, Median, &#10; Q1, Q3, ainsi que leurs MidRanges et Modes" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Comic Sans MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView_opt3" layoutX="169.0" layoutY="107.0" prefHeight="409.0" prefWidth="461.0" AnchorPane.bottomAnchor="3.0" AnchorPane.leftAnchor="169.0" AnchorPane.rightAnchor="0.0" />
+      <TextArea fx:id="textdsinfo" layoutX="5.0" layoutY="90.0" prefHeight="293.0" prefWidth="152.0" />
+      <Label layoutX="15.0" layoutY="393.0" prefHeight="45.0" prefWidth="120.0" text="Détails du DataSet" textAlignment="CENTER">
+         <font>
+            <Font name="Comic Sans MS Bold" size="12.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

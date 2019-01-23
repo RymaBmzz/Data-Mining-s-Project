@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MenuController">
+   <children>
+      <ImageView fitHeight="237.0" fitWidth="192.0" layoutX="427.0" layoutY="253.0" opacity="0.28" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../im2.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="92.0" layoutY="29.0" prefHeight="44.0" prefWidth="416.0" text="Menu des tâches supportées" textFill="#a42525" underline="true">
+         <font>
+            <Font name="Comic Sans MS" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="opt1" layoutX="518.0" layoutY="99.0" mnemonicParsing="false" onAction="#load_opt1" text="ouvrir" />
+      <Label layoutX="35.0" layoutY="93.0" prefHeight="36.0" prefWidth="235.0" text="-Affichage du Data set">
+         <font>
+            <Font name="System Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="32.0" layoutY="143.0" prefHeight="64.0" prefWidth="454.0" text="-Choix du Data set et Affichage de quelques informations telles que le &#10;nombre d’instances, nombred’attributs et leurs types">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="29.0" layoutY="220.0" prefHeight="64.0" prefWidth="460.0" text="-Affichage des 5 chiffres pour chaque attribut : Min, Max, Median,  Q1,  &#10;Q3, ainsi que leurs MidRanges et Modes">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="opt2" layoutX="518.0" layoutY="163.0" mnemonicParsing="false" onAction="#load_opt2" text="ouvrir" />
+      <Button fx:id="opt3" layoutX="518.0" layoutY="240.0" mnemonicParsing="false" onAction="#load_opt3" text="ouvrir" />
+      <Label layoutX="24.0" layoutY="320.0" prefHeight="17.0" prefWidth="416.0" text="-BOXPlots pour chaque attribut et sur la meme courbe">
+         <font>
+            <Font name="Comic Sans MS" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="opt4" layoutX="518.0" layoutY="317.0" mnemonicParsing="false" text="ouvrir" />
+   </children>
+</AnchorPane>
